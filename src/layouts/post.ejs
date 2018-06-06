@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%= title ? title : site.title ? site.title : 블로그 %></title>
+    <link rel="shortcut icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../assets/css/post.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"></link>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+</head>
+<body>
+    <header>
+        <div>
+            <div>
+                <a href="<%= site.basePath %>/"><%= site.title%></a>
+            </div>        
+            <div>
+                <a href="<%= site.basePath%>/about">소개</a>
+                <a href="<%= site.basePath%>/" style="font-weight: 500; color:#000000;">블로그</a>
+                <a href="<%= site.githubPath %>">깃허브</a>
+            </div>
+        </div>
+    </header>
+    <section class="content">
+        <div class="content-header">
+            <h1><%= title %></h1>
+            <p><%= date %></p>
+            <hr>
+        </div>
+        <div class="main-content">
+            <%- body %>
+        </div>
+    </section>
+</body>
+</html>

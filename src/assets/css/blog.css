@@ -1,0 +1,94 @@
+@import url(http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+@import url(http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+p, a, span { font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif'; }
+/* *{ font-family: "Nanum Gothic", sans-serif;} */
+html, head, body {
+    width: 100%;
+    height: 100%;
+}
+html, head, body, section, div, h1, p, a,span {
+    margin: 0;
+    padding: 0;
+}
+a{
+    color:inherit;
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    height: 60px;
+
+    border-bottom: 1px solid #e2e4e6;
+    box-sizing: border-box;
+
+    font-weight: 300;
+    font-style: none;
+    color: #919698;
+}
+header>div{
+    width: 700px;
+    height: 100%;
+
+    margin:auto;
+
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    align-items: center; 
+}
+header>div>div:first-child{
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #000000;
+}
+header>div>div:last-child>a{
+    margin-right: 2rem;
+}
+
+.content{
+    width: 700px;
+    height: 100%;
+
+    margin:auto;
+    margin-top: 6rem;
+    /* background-color: aqua; */
+}
+.main-content{
+    border-bottom: 1px solid #e2e4e6;
+    font-size: 1.2rem;
+
+    margin-bottom: 3.8rem;
+}
+.main-content>div{
+    margin-bottom: 3.8rem;
+}
+.main-content>div>p{
+    margin-bottom: 1rem;
+}
+h1{
+    font-size: 2rem;
+    /* font-weight: 600;     */
+    margin-bottom: 1.8rem;
+}
+.desc{
+    font-weight: 200;
+}
+.date{
+    color: #919698;
+}
+@media(max-width: 705px){
+    html{
+        font-size: 12px;
+    }
+    header>div{
+        width: 95%;
+    }
+    .content{
+        width: 95%;
+        margin-top: 4rem;
+    }
+    
+}

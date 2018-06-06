@@ -1,0 +1,31 @@
+{
+  "name": "staticsitegenerator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-pages": "NODE_ENV=production node ./build_scripts/build.js",
+    "build-dev" : "node ./build_scripts/build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ditempo/Static-Site-Generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ditempo/Static-Site-Generator/issues"
+  },
+  "homepage": "https://github.com/Ditempo/Static-Site-Generator#readme",
+  "dependencies": {
+    "front-matter": "^2.3.0",
+    "fs-extra": "^5.0.0",
+    "glob": "^7.1.2",
+    "marked": "^0.3.19",
+    "path": "^0.12.7"
+  }
+}

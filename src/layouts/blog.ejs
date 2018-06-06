@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%= site.title ? site.title : 기술블로그 %></title>
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="./assets/css/blog.css">
+</head>
+<body>
+    <header>
+            <div>
+                <div>
+                    <a href="<%= site.basePath %>/"><%= site.title%></a>
+                </div>        
+                <div>
+                    <a href="<%= site.basePath%>/about">소개</a>
+                    <a href="<%= site.basePath%>/" style="font-weight: 500; color:#000000;">블로그</a>
+                    <a href="<%= site.githubPath %>">깃허브</a>
+                </div>
+            </div>
+        </header>
+    <section class="content">
+        <% for(var i=0; i< item.length; i++){%>
+        <div class="main-content">
+            <div>
+                <a href="<%= site.basePath+item[i].url %>"><h1><%= item[i].title %></h1></a>
+                <p class="desc"><%= item[i].desc %></p>
+                <p class="date"><%= item[i].date %></p>
+            </div>
+        </div>
+        <% }%>
+    </section>
+</body>
+</html>
